@@ -1,0 +1,28 @@
+{
+  "name": "mygreat-adaptors",
+  "description": "mygreat adaptors monorepo",
+  "homepage": "https://github.com/haoc-labs/mygreat-adaptors#readme",
+  "repository": "git@github.com:haoc-labs/mygreat-adaptors.git",
+  "bugs": {
+    "url": "https://github.com/haoc-labs/mygreat/issues"
+  },
+  "contributors": [
+    "Rafael Willians <me@rwillians.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "engines": [
+    "node >= 7.6.0"
+  ],
+  "scripts": {
+    "test": "mocha specs --check-leaks --full-trace --use_strict --recursive --require ./specs/spec-helper.js"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-shallow-deep-equal": "^1.4.6",
+    "mocha": "^3.5.3",
+    "sinon": "^3.3.0",
+    "sinon-chai": "^2.13.0"
+  }
+}
