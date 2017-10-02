@@ -1,6 +1,6 @@
 {
-  "name": "mygreat-directory",
-  "description": "MyGreat directory adaptor",
+  "name": "@haoc-labs/mygreat-directory",
+  "description": "MyGreat filesystem directory based adaptor",
   "homepage": "https://github.com/haoc-labs/mygreat-adaptors#readme",
   "repository": "git@github.com:haoc-labs/mygreat-adaptors.git",
   "bugs": {
