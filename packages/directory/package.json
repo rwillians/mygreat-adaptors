@@ -11,6 +11,7 @@
     "Rafael Willians <me@rwillians.com>"
   ],
   "license": "MIT",
+  "private": false,
   "engines": [
     "node >= 7.6.0"
   ],

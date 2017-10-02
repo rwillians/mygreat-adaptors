@@ -1,14 +1,4 @@
 {
-  "name": "mygreat-adaptors",
-  "description": "mygreat adaptors monorepo",
-  "homepage": "https://github.com/haoc-labs/mygreat-adaptors#readme",
-  "repository": "git@github.com:haoc-labs/mygreat-adaptors.git",
-  "bugs": {
-    "url": "https://github.com/haoc-labs/mygreat/issues"
-  },
-  "contributors": [
-    "Rafael Willians <me@rwillians.com>"
-  ],
   "license": "MIT",
   "private": true,
   "engines": [
