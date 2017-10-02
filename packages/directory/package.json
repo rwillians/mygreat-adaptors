@@ -2,6 +2,7 @@
   "name": "@haoc-labs/mygreat-directory",
   "version": "0.1.0",
   "description": "MyGreat filesystem directory based adaptor",
+  "main": "index.js",
   "homepage": "https://github.com/haoc-labs/mygreat-adaptors#readme",
   "repository": "git@github.com:haoc-labs/mygreat-adaptors.git",
   "bugs": {
