@@ -12,10 +12,13 @@ module.exports = (dir) => ({
       .map(absolute => [ path.parse(absolute).name, require(absolute) ])
       .map(([ name, content ]) => ({ name, content }))
   },
-  create: async (name, content) => {
+  add: async (name, content) => {
     return fse.outputFile(
       path.join(dir, name) + '.json',
       JSON.stringify(content, null, '    ')
     )
+  },
+  remove: async (name, content) => {
+    return fse.remove(path.join(dir, name) + '.json')
   }
 })
