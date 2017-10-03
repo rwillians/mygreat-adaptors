@@ -1,13 +1,18 @@
 # mygreat-mongodb
 
 ```js
-const mygreat = require('@haoc-labs/mygreat')
 const directory = require('@haoc-labs/mygreat-directory')
-const memory = require('@haoc-labs/mygreat/adaptors/in-memory')
+const mongodb = require('@haoc-labs/mygreat-mongodb')
+const mongoose = require('mongoose')
+mongoose.Promise = Promise
 
-const migrate = mygreat.from(directory('./migrations'), memory([]))
-
-;(async () => {
-    await migrate.up()
-})()
+module.exports = (environment) => {
+  const conn = mongoose.createConnection('mongodb://localhost:27017/foobar')
+  return {
+    local: directory('./migrations'),
+    remote: mongodb(conn),
+    setup: async () => conn,
+    shutdown: async () => { mongoose.disconnect() }
+  }
+}
 ```
