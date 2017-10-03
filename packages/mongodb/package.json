@@ -1,6 +1,6 @@
 {
   "name": "@haoc-labs/mygreat-mongodb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MyGreat mongodb adaptor",
   "main": "index.js",
   "homepage": "https://github.com/haoc-labs/mygreat-adaptors#readme",
