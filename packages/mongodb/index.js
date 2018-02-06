@@ -37,10 +37,7 @@ const factory = (connection, { collection = 'migrations' }) => {
 }
 
 const connect = (url, options = { }) => {
-  return mongoose.createConnection(
-    url,
-    Object.assign({ promiseLibrary: Promise }, options)
-  )
+  return mongoose.createConnection(url, Object.assign({ promiseLibrary: Promise }, options))
 }
 
 module.exports = factory
