@@ -1,6 +1,6 @@
 'use strict'
 
-const { Schema } = require('mongoose')
+const mongoose = require('mongoose')
 
 const SCHEMA = {
   _id: {
@@ -24,7 +24,7 @@ const getOptions = (collection) => ({
 })
 
 const factory = (connection, { collection = 'migrations' }) => {
-  const schema = new Schema(SCHEMA, getOptions(collection))
+  const schema = new mongoose.Schema(SCHEMA, getOptions(collection))
   const model = connection.model('Migration', schema)
 
   return {
