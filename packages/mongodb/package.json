@@ -27,7 +27,9 @@
     "sinon-chai": "^2.13.0"
   },
   "peerDependencies": {
-    "mongoose": "^4.0.0",
     "mygreat": "^1.1.2"
+  },
+  "dependencies": {
+    "mongoose": "^5.0.3"
   }
 }

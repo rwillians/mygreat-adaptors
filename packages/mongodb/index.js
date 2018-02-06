@@ -1,6 +1,8 @@
 'use strict'
 
-const getSchema = (Schema) => ({
+const { Schema } = require('mongoose')
+
+const SCHEMA = {
   _id: {
     required: true,
     type: String
@@ -9,7 +11,7 @@ const getSchema = (Schema) => ({
     required: true,
     type: [ String ]
   }
-})
+}
 
 const getOptions = (collection) => ({
   autoIndex: true,
@@ -21,11 +23,8 @@ const getOptions = (collection) => ({
   versionKey: false
 })
 
-module.exports = (connection, options = {}) => {
-  Object.assign({ collection: 'migrations' }, options)
-  const { base: { Schema } } = connection
-
-  const schema = new Schema(getSchema(Schema), getOptions(options.collection))
+const factory = (connection, { collection = 'migrations' }) => {
+  const schema = new Schema(SCHEMA, getOptions(collection))
   const model = connection.model('Migration', schema)
 
   return {
@@ -36,3 +35,13 @@ module.exports = (connection, options = {}) => {
     remove: async (name) => model.deleteOne({ _id: name })
   }
 }
+
+const connect = (url, options = { }) => {
+  return mongoose.createConnection(
+    url,
+    Object.assign({ promiseLibrary: Promise }, options)
+  )
+}
+
+module.exports = factory
+module.exports.connect = connect
