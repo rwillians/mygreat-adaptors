@@ -1,6 +1,6 @@
 {
   "name": "mygreat-directory",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "MyGreat filesystem directory based adaptor",
   "main": "index.js",
   "homepage": "https://github.com/rwillians/mygreat-adaptors#readme",

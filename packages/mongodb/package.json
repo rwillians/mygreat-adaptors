@@ -1,6 +1,6 @@
 {
   "name": "mygreat-mongodb",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "MyGreat mongodb adaptor",
   "main": "index.js",
   "homepage": "https://github.com/rwillians/mygreat-adaptors#readme",
@@ -27,7 +27,7 @@
     "sinon-chai": "^2.13.0"
   },
   "peerDependencies": {
-    "mygreat": "^1.1.2",
-    "mongoose": "^4.0.0"
+    "mongoose": "^4.0.0",
+    "mygreat": "^1.1.2"
   }
 }
