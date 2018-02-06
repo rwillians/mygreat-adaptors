@@ -1,6 +1,6 @@
 {
   "name": "mygreat-mongodb",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "MyGreat mongodb adaptor",
   "main": "index.js",
   "homepage": "https://github.com/rwillians/mygreat-adaptors#readme",
