@@ -5,9 +5,9 @@
     "node >= 7.6.0"
   ],
   "scripts": {
-    "test": "lerna exec yarn test"
+    "test": "lerna exec npm test"
   },
   "devDependencies": {
-    "lerna": "^2.2.0"
+    "lerna": "^2.8.0"
   }
 }

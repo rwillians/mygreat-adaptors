@@ -21,7 +21,7 @@ describe('mygreat-directory(path String): Object', () => {
       const adaptor = directory('specs/blackhole')
 
       return expect(
-        adaptor.create(name, content)
+        adaptor.add(name, content)
                .then(() => adaptor.all())
                .then(all => all.map(file => file.name))
       ).to.eventually.includes(name)

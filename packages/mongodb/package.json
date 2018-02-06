@@ -1,12 +1,12 @@
 {
-  "name": "@haoc-labs/mygreat-mongodb",
+  "name": "mygreat-mongodb",
   "version": "0.1.2",
   "description": "MyGreat mongodb adaptor",
   "main": "index.js",
-  "homepage": "https://github.com/haoc-labs/mygreat-adaptors#readme",
-  "repository": "git@github.com:haoc-labs/mygreat-adaptors.git",
+  "homepage": "https://github.com/rwillians/mygreat-adaptors#readme",
+  "repository": "git@github.com:rwillians/mygreat-adaptors.git",
   "bugs": {
-    "url": "https://github.com/haoc-labs/mygreat-adaptors/issues"
+    "url": "https://github.com/rwillians/mygreat-adaptors/issues"
   },
   "contributors": [
     "Rafael Willians <me@rwillians.com>"
@@ -27,7 +27,7 @@
     "sinon-chai": "^2.13.0"
   },
   "peerDependencies": {
-    "@haoc-labs/mygreat": "^0.1.0",
+    "mygreat": "^1.1.2",
     "mongoose": "^4.0.0"
   }
 }
