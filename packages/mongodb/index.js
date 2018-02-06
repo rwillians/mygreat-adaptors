@@ -23,7 +23,7 @@ const getOptions = (collection) => ({
   versionKey: false
 })
 
-const factory = (connection, { collection = 'migrations' }) => {
+const factory = (connection, { collection = 'migrations' } = { }) => {
   const schema = new mongoose.Schema(SCHEMA, getOptions(collection))
   const model = connection.model('Migration', schema)
 
